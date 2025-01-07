@@ -1,0 +1,35 @@
+body{
+    background-color: green;
+}
+/*header*/
+.header *{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+
+#header-discord-logo{
+    margin-right: 5px;
+    
+    
+}
+#discord-title{
+  
+   
+   
+}
+
+#header-login-button{
+    margin-right:20px;
+    height:40px;
+    width:60px;
+    border-radius: 20px;
+    border-style:none;
+    float:right;
+    
+}
+
+svg{
+    float:right;
+    
+}
