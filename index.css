@@ -1,45 +1,90 @@
-body{
-    background-color: green;
-
-    margin:2px;
+html, body{
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    border:0 0 0 0;
+    height:100%;
+    overflow: hidden;
 }
 /*navigator*/
+
+/*
+https://davidwalsh.name/flexbox-spacer
+use this link
+-next step:implement spacers in flexbox navigator head to correct spacing
+*/
 .navigator{
-    width:100%;
+    display:flex;
+    padding:0px 10px 0px 10px;
     height: 100px;
     background-color: blueviolet;
-   
-}
-.navigator tr, td{
-    vertical-align:middle;
-    border:10px, solid, black ;
- 
-}
+    align-items: center;
+    justify-content: space-between;
 
+   
+}
+.navigator *{
+    display: inline-block;
 
-#header-discord-logo{
-    margin-right: 5px;
-    
+}
+img{
+    display: block;
+    margin-left:5%;
+    margin-right:-5%;
     
 }
-#discord-title{
-  
-   
-   
+.discord-title{
+    font-size:30px;
+    font-family: uni;
+    color:white;
 }
 
 #header-login-button{
-    margin-right:20px;
     height:40px;
     width:60px;
     border-radius: 20px;
     border-style:none;
-    float:right;
+    margin-right:-5%;
+ 
     
 }
 
-svg{
-    float:right;
-    margin-right:30px;
+.selection-bars{
+    margin-right:5%;
+}
+.spacer{
+    height:100%;
+    width:60%;
+}
+
+/*main*/
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:80%;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items : center;
+    
     
 }
+
+.login-page{
+    display:flex;
+    width:60%;
+    height:70%;
+    background-color: black;
+    margin:0;
+    padding:2%;
+    justify-content: space-between;
+
+}
+/*login-page inside*/
+.login-page div{
+    display:inline-block;
+    height:100%;
+    width:50%;
+    background-color: yellow;
+    box-sizing:border-box;
+}
+
